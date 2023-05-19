@@ -78,6 +78,7 @@ Cons:
 - Templates are not stored locally and not easy to add to version control
 - Some people don't want a GUI email editor and find it a hindrance
 
+
 ### AWS Simple Email Service (SES)
 
 Uses Handlebars-style templates (React and SvelteKit template options are coming soon)
@@ -92,6 +93,7 @@ Cons:
 - Some people find AWS difficult to navigate/set up
 - New customers are placed in sandbox mode to start and have to submit a request to get real email-sending privileges
 
+
 ### Resend
 
 Uses Handlebars OR React templates
@@ -105,6 +107,7 @@ Cons:
 - No GUI email editor
 - Not the cheapest option
 - Currently in beta, so invite-only (or join the waitlist)
+
 
 ## Templates
 
