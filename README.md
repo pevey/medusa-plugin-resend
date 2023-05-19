@@ -24,9 +24,9 @@ If you are not familiar with Medusa, you can learn more on [the project web site
 Enable in your medusa-config.js file similar to other plugins:
 
 ```bash
-  {
-    resolve: `medusa-plugin-resend`,
-    options: {
+{
+resolve: `medusa-plugin-resend`,
+	options: {
 		api_key: process.env.RESEND_API_ID,
 		from: process.env.SES_FROM,
 		enable_endpoint: process.env.SES_ENABLE_ENDPOINT,
@@ -47,8 +47,8 @@ Enable in your medusa-config.js file similar to other plugins:
 		//claim_shipment_created_template: 'claim_shipment_created',
 		//user_password_reset_template: 'user_password_reset',
 		//medusa_restock_template: 'medusa_restock',
-    }
-  },
+	}
+},
 ```
 
 - Obtain an API key from your Resend dashboard
