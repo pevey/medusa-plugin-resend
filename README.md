@@ -65,7 +65,7 @@ Enable in your medusa-config.js file similar to other plugins:
 
 There are 3 primary options for sending email with Medusa:
 
-# Sendgrid
+### Sendgrid
 
 Uses Handlebars-style templates
 
@@ -78,7 +78,7 @@ Cons:
 - Templates are not stored locally and not easy to add to version control
 - Some people don't want a GUI email editor and find it a hindrance
 
-# AWS Simple Email Service (SES)
+### AWS Simple Email Service (SES)
 
 Uses Handlebars-style templates (React and SvelteKit template options are coming soon)
 
@@ -92,7 +92,7 @@ Cons:
 - Some people find AWS difficult to navigate/set up
 - New customers are placed in sandbox mode to start and have to submit a request to get real email-sending privileges
 
-# Resend
+### Resend
 
 Uses Handlebars OR React templates
 
