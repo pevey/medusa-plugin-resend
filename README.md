@@ -111,7 +111,7 @@ Cons:
 
 ## Templates
 
-The templates used are stored locally.  Create a 'data/templates' folder and include the entire path in the SES_TEMPLATE_PATH variable.
+The templates used are stored locally.  Create a 'data/templates' folder and include the entire path in the RESEND_TEMPLATE_PATH variable.
 
 ```bash
 medusa-server  // root directory
