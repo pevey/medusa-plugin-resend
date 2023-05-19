@@ -40,6 +40,11 @@
    "gitHead": "3bbd1e8507e00bc471de6ae3c30207999a4a4011",
    "keywords": [
       "medusa-plugin",
-      "medusa-plugin-notification"
+      "medusa-plugin-notification",
+		"email",
+		"react email",
+		"handlebars email",
+		"transactional email",
+		"resend"
    ]
 }
