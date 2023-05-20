@@ -101,7 +101,7 @@ Uses Handlebars OR React templates
 Pros:
 - Easy and quick to set up
 - Medusa plugin uses local email templates that can be added to version control repos
-- **Can use React templates**
+- <span style="color:green">Can use React templates</span>
 
 Cons:
 - No GUI email editor
