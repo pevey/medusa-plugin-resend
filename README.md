@@ -55,7 +55,7 @@ resolve: `medusa-plugin-resend`,
 
 - The 'from' setting should be a valid email address on a domain you have properly configured with Resend
 
-- The template path is the location of your email templates.  It can be a full (absolute) path or a path relative to the medusa root folder, e.g., 'medusa/data/templates'.
+- The template path is the location of your email templates.  It can be a full (absolute) path or a path relative to the medusa root folder, e.g., 'data/templates'.
 
 - The 'subject_template_type' can be 'handlebars' or 'text'.  The default is handlebars.  If you choose text, you cannot include dynamic values (like customer name or order number) in your subject lines.
 
