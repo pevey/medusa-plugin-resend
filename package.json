@@ -13,7 +13,7 @@
    "devDependencies": {
       "@medusajs/medusa": "^1.10.1",
       "@medusajs/types": "^1.8.5",
-      "@medusajs/utils": "^1.8.4",
+      "@medusajs/utils": "^1.8.5",
       "body-parser": "^1.19.0",
       "cors": "^2.8.5",
       "cross-env": "^5.2.1",
@@ -41,10 +41,10 @@
    "keywords": [
       "medusa-plugin",
       "medusa-plugin-notification",
-		"email",
-		"react email",
-		"handlebars email",
-		"transactional email",
-		"resend"
+      "email",
+      "react email",
+      "handlebars email",
+      "transactional email",
+      "resend"
    ]
 }

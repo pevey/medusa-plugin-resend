@@ -59,7 +59,7 @@ resolve: `medusa-plugin-resend`,
 
 - The 'subject_template_type' can be 'handlebars' or 'text'.  The default is handlebars.  If you choose text, you cannot include dynamic values (like customer name or order number) in your subject lines.
 
-- The body_template-type' can be 'handlebars' or 'react'.  The default is handlebars.  See below for info on using React templates.
+- The body_template_type' can be 'handlebars' or 'react'.  The default is handlebars.  See below for info on using React templates.
 
 ## Why Resend?
 
