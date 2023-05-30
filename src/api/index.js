@@ -12,8 +12,7 @@ export default (rootDirectory) => {
 	const storeCorsOptions = { origin: config.projectConfig.store_cors.split(","), credentials: true, }
    const adminCorsOptions = { origin: config.projectConfig.admin_cors.split(","), credentials: true, }
 
-	router.use(bodyParser.json())
-
+	router.use("resend/send", bodyParser.json())
 	router.post("/resend/send", cors(storeCorsOptions), (req, res) => {
 		const resendService = req.scope.resolve("resendService")
 
