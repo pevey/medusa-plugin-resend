@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.2.2
+
+### Patch Changes
+
+- Clean up dependencies (again) to address the circular dep CJS issue.  Be sure to yarn link all the peer deps if you want to make changes to the plugin locally.
+
 ## 0.2.1
 
 ### Patch Changes
