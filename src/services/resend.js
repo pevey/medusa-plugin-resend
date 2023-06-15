@@ -4,6 +4,7 @@ import path from 'path'
 import fs from 'fs'
 import { humanizeAmount, zeroDecimalCurrencies } from 'medusa-core-utils'
 import { NotificationService } from 'medusa-interfaces'
+import { MedusaError } from "@medusajs/utils"
 
 class ResendService extends NotificationService {
 	static identifier = "resend"
@@ -72,10 +73,14 @@ class ResendService extends NotificationService {
 
 	async sendNotification(event, eventData, attachmentGenerator) {
 		let templateId = this.getTemplateId(event)
-		if (!templateId) { return false }
+		if (!templateId) { 
+			throw new MedusaError(MedusaError.Types.INVALID_DATA, "Resend service: No template was set for this event")
+		}
 
 		const data = await this.fetchData(event, eventData, attachmentGenerator)
-		if (!data) { return false }
+		if (!data) {
+			throw new MedusaError(MedusaError.Types.INVALID_DATA, "Resend service: Invalid event data was received")
+		}
 
 		if (data.locale) {
 			templateId = this.getLocalizedTemplateId(event, data.locale) || templateId
@@ -102,7 +107,9 @@ class ResendService extends NotificationService {
 			if (text) sendOptions.text = text
 		}
 
-		if (!sendOptions.subject || (!sendOptions.html && !sendOptions.text && !sendOptions.react)) { return false }
+		if (!sendOptions.subject || (!sendOptions.html && !sendOptions.text && !sendOptions.react)) { 
+			throw new MedusaError(MedusaError.Types.INVALID_DATA, "Resend service: The requested templates were not found. Check template path in config.") 	
+		}
 
 		const attachments = await this.fetchAttachments(
 			event,

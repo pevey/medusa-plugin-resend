@@ -1,6 +1,6 @@
 {
    "name": "medusa-plugin-resend",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "description": "Resend email plugin to send transactional emails for Medusa using local Handlebars templates or local React templates",
    "main": "index.js",
    "repository": {
