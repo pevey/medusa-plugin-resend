@@ -26,28 +26,28 @@ Enable in your medusa-config.js file similar to other plugins:
 ```bash
 {
 resolve: `medusa-plugin-resend`,
-	options: {
-		api_key: process.env.RESEND_API_ID,
-		from: process.env.SES_FROM,
-		enable_endpoint: process.env.SES_ENABLE_ENDPOINT,
-		template_path: process.env.SES_TEMPLATE_PATH,
-		subject_template_type: process.env.RESEND_SUBJECT_TEMPLATE_TYPE,
-		body_template_type: process.env.RESEND_BODY_TEMPLATE_TYPE,
-		order_placed_template: 'order_placed',
-		order_shipped_template: 'order_shipped',
-		customer_password_reset_template: 'customer_password_reset',
-		gift_card_created_template: 'gift_card_created',
-		//order_canceled_template: 'order_canceled',
-		//order_refund_created_template: 'order_refund_created',
-		//order_return_requested_template: 'order_return_requested',
-		//order_items_returned_template: 'order_items_returned',
-		//swap_created_template: 'swap_created',
-		//swap_shipment_created_template: 'swap_shipment_created',
-		//swap_received_template: 'swap_received',
-		//claim_shipment_created_template: 'claim_shipment_created',
-		//user_password_reset_template: 'user_password_reset',
-		//medusa_restock_template: 'medusa_restock',
-	}
+   options: {
+      api_key: process.env.RESEND_API_ID,
+      from: process.env.SES_FROM,
+      enable_endpoint: process.env.SES_ENABLE_ENDPOINT,
+      template_path: process.env.SES_TEMPLATE_PATH,
+      subject_template_type: process.env.RESEND_SUBJECT_TEMPLATE_TYPE,
+      body_template_type: process.env.RESEND_BODY_TEMPLATE_TYPE,
+      order_placed_template: 'order_placed',
+      order_shipped_template: 'order_shipped',
+      customer_password_reset_template: 'customer_password_reset',
+      gift_card_created_template: 'gift_card_created',
+      //order_canceled_template: 'order_canceled',
+      //order_refund_created_template: 'order_refund_created',
+      //order_return_requested_template: 'order_return_requested',
+      //order_items_returned_template: 'order_items_returned',
+      //swap_created_template: 'swap_created',
+      //swap_shipment_created_template: 'swap_shipment_created',
+      //swap_received_template: 'swap_received',
+      //claim_shipment_created_template: 'claim_shipment_created',
+      //user_password_reset_template: 'user_password_reset',
+      //medusa_restock_template: 'medusa_restock',
+   }
 },
 ```
 
@@ -116,15 +116,15 @@ The templates used are stored locally.  Create a 'data/templates' folder and inc
 ```bash
 medusa-server  // root directory
 |-data
-	|-templates
-		|-order_placed  // or whatever you name your templates and specify in the config file
-			|-subject.hbs
-			|-subject.text
-			|-html.hbs
-			|-html.jsx  // uncompiled React template
-			|-html.js   // compiled React template
-			|-text.hbs
-		|- etc   
+   |-templates
+      |-order_placed  // or whatever you name your templates and specify in the config file
+         |-subject.hbs
+         |-subject.text
+         |-html.hbs
+         |-html.jsx  // uncompiled React template
+         |-html.js   // compiled React template
+         |-text.hbs
+      |- etc   
 ```
 
 Not all of the above files are required.  You only need either subject.hbs or subject.text, depending on whether you have opted to use text or handlebars subject type.  If you have opted to use React body templates, you do not need html.hbs or text.hbs.  If you have opted to use Handlebars body templates you do not need the React templates.  You can use either html.hbs or text.hbs, or both.  If you include both, both templates will be compiled and sent, and it will be up to the user's email client which gets rendered.
