@@ -65,7 +65,7 @@ resolve: `medusa-plugin-resend`,
 
 Fortunately, there are now many options for notification providers that can be used with Medusa, including Sendgrid, AWS Simple Email Service (SES), Postmark, and Resend.
 
-A major pro of Resend in some use cases if the ability to use React email templates.  If your frontend is a Nextjs app, using React templates that can be added to version control is likely ideal for your use case.  It allows your frontend developers to stay in one syntax and reuse assets and design elements.
+A major pro of Resend in some use cases is the ability to use React email templates.  If your frontend is a Nextjs app, using React templates that can be added to version control is likely ideal for your use case.  It allows your frontend developers to stay in one syntax and reuse assets and design elements.
 
 - Easy and quick to set up with no initial sandbox mode that restricts recipients
 - Uses local email templates that can be added to version control repos

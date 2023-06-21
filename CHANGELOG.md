@@ -1,5 +1,9 @@
 # Change 
 
+## 1.0.1
+
+- Fix typo in README
+
 ## 1.0.0
 
 - Bump to 1.0 since all planned features are implemented and stable
