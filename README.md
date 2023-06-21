@@ -63,51 +63,13 @@ resolve: `medusa-plugin-resend`,
 
 ## Why Resend?
 
-There are 3 primary options for sending email with Medusa:
+Fortunately, there are now many options for notification providers that can be used with Medusa, including Sendgrid, AWS Simple Email Service (SES), Postmark, and Resend.
 
-### Sendgrid
+A major pro of Resend in some use cases if the ability to use React email templates.  If your frontend is a Nextjs app, using React templates that can be added to version control is likely ideal for your use case.  It allows your frontend developers to stay in one syntax and reuse assets and design elements.
 
-Uses Handlebars-style templates
-
-Pros:
-- Has a web-based GUI template editor
-- Easy and quick to sign up and get started
-
-Cons:
-- Not the cheapest option
-- Templates are not stored locally and not easy to add to version control
-- Some people don't want a GUI email editor and find it a hindrance
-
-
-### AWS Simple Email Service (SES)
-
-Uses Handlebars-style templates (React and SvelteKit template options are coming soon)
-
-Pros:
-- The cheapest option.  Often free if you host your app on EC2.  Still usually the cheapest option even if you don't.
-- Convenient if you are already using AWS services
-- Medusa plugin uses local email templates that can be added to version control repos
-
-Cons:
-- No GUI email editor
-- Some people find AWS difficult to navigate/set up
-- New customers are placed in sandbox mode to start and have to submit a request to get real email-sending privileges
-
-
-### Resend
-
-Uses Handlebars OR React templates
-
-Pros:
-- Easy and quick to set up
-- Medusa plugin uses local email templates that can be added to version control repos
-- **Can use React templates**
-
-Cons:
-- No GUI email editor
-- Not the cheapest option
-- Currently in beta, so invite-only (or join the waitlist)
-
+- Easy and quick to set up with no initial sandbox mode that restricts recipients
+- Uses local email templates that can be added to version control repos
+- Uses Handlebars OR React templates
 
 ## Templates
 

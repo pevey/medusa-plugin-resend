@@ -1,4 +1,10 @@
-# Change Log
+# Change 
+
+## 1.0.0
+
+- Bump to 1.0 since all planned features are implemented and stable
+- Bump resend library dependency to latest version
+- Print useful MedusaError messages to console when steps fail to assist with debugging and configuration
 
 ## 0.2.2
 
