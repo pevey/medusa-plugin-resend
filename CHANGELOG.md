@@ -1,5 +1,9 @@
 # Change 
 
+## 1.1.0
+
+- Update Resend SDK package dependency to v1.0
+
 ## 1.0.1
 
 - Fix typo in README
