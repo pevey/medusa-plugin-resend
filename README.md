@@ -87,7 +87,7 @@ medusa-server  // root directory
    |-templates
       |-order_placed  // or whatever you name your templates and specify in the config file
          |-subject.hbs
-         |-subject.text
+         |-subject.txt
          |-html.hbs
          |-html.jsx  // uncompiled React template
          |-html.js   // compiled React template
@@ -95,7 +95,7 @@ medusa-server  // root directory
       |- etc   
 ```
 
-Not all of the above files are required.  You only need either subject.hbs or subject.text, depending on whether you have opted to use text or handlebars subject type.  If you have opted to use React body templates, you do not need html.hbs or text.hbs.  If you have opted to use Handlebars body templates you do not need the React templates.  You can use either html.hbs or text.hbs, or both.  If you include both, both templates will be compiled and sent, and it will be up to the user's email client which gets rendered.
+Not all of the above files are required.  You only need either subject.hbs or subject.txt, depending on whether you have opted to use text or handlebars subject type.  If you have opted to use React body templates, you do not need html.hbs or text.hbs.  If you have opted to use Handlebars body templates you do not need the React templates.  You can use either html.hbs or text.hbs, or both.  If you include both, both templates will be compiled and sent, and it will be up to the user's email client which gets rendered.
 
 ## Transpiling React Templates
 
