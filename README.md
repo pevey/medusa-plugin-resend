@@ -108,7 +108,7 @@ npm i -D @babel/core @babel/cli @babel/preset-env @babel/preset-react
 Example of compiling a template:
 
 ```bash
-npx babel 'order_placed/html.jsx' --presets=@babel/preset-env,@babel/preset-react -o 'order_placed/html.js'
+npx babel order_placed/html.jsx --presets=@babel/preset-env,@babel/preset-react -o order_placed/html.js
 ```
 
 More options and convenient tooling for compiling Medusa email templates are in the works, including Tailwind CSS processing.
